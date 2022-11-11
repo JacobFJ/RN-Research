@@ -19,7 +19,5 @@ jobs:
               run: yarn install
             - name: lint
               run: yarn run lint
-            - name: tsc
-              run: yarn run typescript
             - name: test
               run: yarn run test
