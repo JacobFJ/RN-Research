@@ -2,7 +2,7 @@ name: "CodeQL Scan"
 
 on:
   pull_request:
-    branches: [ staging ]
+    branches: [ master ]
 
 jobs:
   analyze:
@@ -25,10 +25,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
       with:
-        languages: ${{ matrix.language }}
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+        languages: javascript, java, kotlin, cpp, objc
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
