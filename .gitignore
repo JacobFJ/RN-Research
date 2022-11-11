@@ -58,3 +58,7 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Jest
+__tests__/__snapshots__/*
+__tests__/__snapshots__/
