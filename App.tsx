@@ -7,8 +7,8 @@
  */
 import React from "react";
 import { Text } from "react-native";
-/
-const App: React.FC = () => {
+
+const App = () => {
   return <Text>Hello, World!</Text>;
 };
 

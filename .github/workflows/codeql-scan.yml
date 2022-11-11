@@ -2,7 +2,7 @@ name: "CodeQL Scan"
 
 on:
   pull_request:
-    branches: [ master, staging ]
+    branches: [ staging ]
 
 jobs:
   analyze:
