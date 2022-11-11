@@ -10,6 +10,12 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.66.4"

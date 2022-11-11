@@ -6,9 +6,10 @@
  * @flow strict-local
  */
 import React from "react";
+import { Text } from "react-native";
 
 const App: React.FC = () => {
-  return <></>;
+  return <Text>Hello, World!</Text>;
 };
 
 export default App;
