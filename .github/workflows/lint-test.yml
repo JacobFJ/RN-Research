@@ -1,10 +1,8 @@
 name: lint & test
 
 on:
-    push:
-        branches: [ master ]
     pull_request:
-        branches: [ master, staging ]
+        branches: [ staging ]
 jobs:
     lint-app:
         runs-on: ubuntu-latest
