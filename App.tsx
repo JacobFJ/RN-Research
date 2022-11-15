@@ -6,10 +6,10 @@
  * @flow strict-local
  */
 import React from "react";
-import { Text } from "react-native";
+import WebView from "react-native-webview";
 
 const App = () => {
-  return <Text>{Math.random(2)}</Text>;
+  return <WebView source={{ uri: "https://reactnative.dev/" }} />;
 };
 
 export default App;
