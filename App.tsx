@@ -6,10 +6,15 @@
  * @flow strict-local
  */
 import React from "react";
-import { Text } from "react-native";
+import { Button } from "react-native";
 
 const App = () => {
-  return <Text>Hello, World</Text>;
+  function insecurePasswordGenerator() {
+    var suffix = Math.random();
+    var password = "myPassword" + suffix;
+    return password;
+  }
+  return <Button title="test" onPress={insecurePasswordGenerator} />;
 };
 
 export default App;
