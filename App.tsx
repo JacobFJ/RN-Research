@@ -6,10 +6,15 @@
  * @flow strict-local
  */
 import React from "react";
-import WebView from "react-native-webview";
+import { Button } from "react-native";
 
 const App = () => {
-  return <WebView source={{ uri: "https://reactnative.dev/" }} />;
+  function insecurePasswordGenerator() {
+    var suffix = Math.random();
+    var password = "myPassword" + suffix;
+    return password;
+  }
+  return <Button title="test" onPress={insecurePasswordGenerator} />;
 };
 
 export default App;
